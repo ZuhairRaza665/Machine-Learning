@@ -1,3 +1,9 @@
+# Date: 2024-03-12
+# CSC354 – Assignment2 – ML – Concept Learning
+# Zuhair Raza
+# FA20-BCS-085
+# Brief Description: This Python code loads a dataset and splits it into training and testing sets. It then trains two baseline classifiers, one using a decision tree and the other a random forest. Afterward, it performs hyperparameter tuning for both models using random search and grid search. Finally, it evaluates the tuned models' performance on the test set and prints out classification reports to assess their accuracy, precision, recall, and F1-score.
+
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report

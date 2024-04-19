@@ -1,0 +1,6 @@
+1) yes it does.
+2)
+1. For c=100: the hyperplane will likely have a narrower margin compared to the one obtained with C=0.01
+2. For c=300: The hyperplane will likely have an even narrower margin compared to C=100, leading to a more aggressive classification of data points.
+3. For c=700: The resulting hyperplane is expected to have an even narrower margin compared to C=300, leading to a more aggressive separation of classes.
+4.For c=1000: The hyperplane will likely have an extremely narrow margin, resulting in a very aggressive classification of data points.

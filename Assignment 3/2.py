@@ -1,3 +1,8 @@
+# Date: 2024-03-12
+# CSC354 – Assignment2 – ML – Concept Learning
+# Zuhair Raza
+# FA20-BCS-085
+# Brief Description: This code uses a dataset about cars to predict their selling prices. It first prepares the data, splitting it into training and testing sets. Then, it creates a basic model to predict prices. After that, it tries to improve the model by testing different combinations of settings using two methods: random search and grid search. Finally, it evaluates the best models from each method to see which one performs better at predicting car prices.
 import pandas as pd
 from sklearn.model_selection import train_test_split, RandomizedSearchCV, GridSearchCV
 from sklearn.tree import DecisionTreeRegressor

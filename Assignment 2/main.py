@@ -7,7 +7,6 @@
 
 import numpy as np
 
-# Define the dataset
 data = [
     ["big", "red", "circle", "no"],
     ["small", "red", "triangle", "no"],
@@ -16,7 +15,6 @@ data = [
     ["small", "blue", "circle", "yes"]
 ]
 
-# Initialize specific_h with the first positive instance
 specific_h = None
 for instance in data:
     if instance[-1] == "yes":
@@ -30,7 +28,6 @@ if specific_h is None:
 print("\nInitialization of specific_h and general_h")
 print("Specific Boundary:", specific_h)
 
-# Initialize general_h with '?' for each attribute
 general_h = [["?" for _ in range(len(specific_h))] for _ in range(len(specific_h))]
 print("Generic Boundary:", general_h)
 
@@ -50,7 +47,6 @@ for i, instance in enumerate(data):
     print("Generic Boundary after", i + 1, "Instance is", general_h)
     print("\n")
 
-# Remove any hypotheses with all '?'
 general_h = [hypothesis for hypothesis in general_h if hypothesis != ['?'] * len(specific_h)]
 
 print("Final Specific_h:\n", specific_h)

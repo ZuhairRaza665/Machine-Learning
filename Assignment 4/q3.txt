@@ -1,0 +1,39 @@
+1) Accuracy with Polynomial Kernel: 0.8333333333333334
+Accuracy with Gaussian Kernel: 0.9
+ Gaussian kernel performed slightly better than the polynomial kernel
+2) 
+	•	When C=0.1:
+	•	Degree=1: Accuracy is 0.733
+	•	Degree=2: Accuracy is 0.9
+	•	Degree=3: Accuracy is 0.833
+	•	When C=1:
+	•	Degree=1: Accuracy is 0.9
+	•	Degree=2: Accuracy is 0.833
+	•	Degree=3: Accuracy is 0.833
+	•	When C=10:
+	•	Degree=1: Accuracy is 0.9
+	•	Degree=2: Accuracy is 0.9
+	•	Degree=3: Accuracy is 0.8
+
+From these results, we can observe that:
+	•	Higher values of C tend to perform better overall.
+	•	Degree=2 seems to perform consistently well across different values of C.
+	•	While increasing the degree beyond 2 doesn't consistently improve performance and may lead to overfitting.
+
+3) 
+	•	When C=0.1:
+	•	Sigma=0.1: Accuracy is 0.3
+	•	Sigma=1: Accuracy is 0.833
+	•	Sigma=10: Accuracy is 0.3
+	•	When C=1:
+	•	Sigma=0.1: Accuracy is 0.833
+	•	Sigma=1: Accuracy is 0.9
+	•	Sigma=10: Accuracy is 0.3
+	•	When C=10:
+	•	Sigma=0.1: Accuracy is 0.667
+	•	Sigma=1: Accuracy is 0.9
+	•	Sigma=10: Accuracy is 0.9
+From these results, we can observe that:
+	•	Higher values of C generally lead to better performance.
+	•	The choice of sigma, with sigma=1 generally performing well across different values of C.
+	•	Extreme values of sigma, such as 0.1 and 10, lead to poorer performance.
